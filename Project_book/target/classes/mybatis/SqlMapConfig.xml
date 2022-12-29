@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration
+  PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-config.dtd">
+
+<configuration>
+   <typeAliases>
+      <typeAlias type="member.model.MemberBean" alias="MemberBean" />
+      <typeAlias type="admin.model.GenreBean" alias="MyGenre"/>
+      <typeAlias type="admin.model.BookBean" alias="MyBook" />
+      
+   </typeAliases>
+   <mappers>
+      <mapper resource="mybatis/member.xml" />
+      <mapper resource="mybatis/admin.xml" />
+      
+   </mappers>
+   
+</configuration>
